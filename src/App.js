@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './styles/tailwind.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+import Navigation from './components/Navigation';
+import HomePage from './components/Home';
+import ContactsPage from './components/Contacts';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className='bg-white lg:h-screen'>
+        <div className='sm:container sm:mx-auto md:p-16'>
+          <div className='text-2xl float-right p-5 bg-gray-200'>{'</'}</div>
+          <Navigation />
+          <Switch>
+            <Route path='/' exact component={HomePage} />
+            <Route path='/contacts' component={ContactsPage} />
+          </Switch>
+        </div>
+      </div>
+    </Router>
   );
 }
 

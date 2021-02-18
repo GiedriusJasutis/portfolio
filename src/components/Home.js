@@ -20,7 +20,7 @@ function Home() {
         <div className='my-8'>
           <h3 className='md:py-5 pb-5 text-2xl md:text-2xl font-medium'>
             {' '}
-            {'{'} Giedrius Jasutis {'}'}
+            Giedrius Jasutis
           </h3>
         </div>
         <div className='my-8 '>
@@ -28,7 +28,7 @@ function Home() {
             Sveiki, esu Giedrius Jasutis, savamokslis programuotojas. Šiuo metu
             dirbu su Canon ofisinių printerių nustatymų automatizavimu. Tam
             naudoju Imacros ir Javascript programavimo kalbą. Taip pat turiu
-            patirties su html, css, bootstrap, tailwindcss.
+            patirties su html, css, bootstrap, tailwindcss ir react js.
           </p>
         </div>
       </div>

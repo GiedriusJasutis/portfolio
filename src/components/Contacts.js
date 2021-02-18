@@ -7,8 +7,8 @@ import { faAlignLeft } from '@fortawesome/free-solid-svg-icons';
 
 function Contacts() {
   return (
-    <div className='flex'>
-      <ul className='text-left mx-2'>
+    <div className='flex flex-col md:flex-row lg:justify-center p-5'>
+      <ul className='text-left w-full md:w-1/2'>
         {/* <li className='py-3'>
           <FontAwesomeIcon icon={faPhone} className='text-blue-500' /> :
           +
